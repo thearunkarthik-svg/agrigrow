@@ -1,0 +1,7 @@
+{
+  "name": "AgriGrow Consulting",
+  "description": "Premium agricultural consulting and support firm specializing in data-driven, sustainable, and profitable farming solutions.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}

@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@100..900&display=swap');
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-agri-green: #2D4F1E;
+  --color-agri-earth: #4A3728;
+  --color-agri-cream: #FDFBF7;
+  --color-agri-accent: #8B9D77;
+  --color-agri-gold: #C5A059;
+}
+
+body {
+  background-color: var(--color-agri-cream);
+  color: var(--color-agri-earth);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Datepicker Overrides */
+.react-datepicker {
+  font-family: var(--font-sans) !important;
+  border: none !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0.75rem !important;
+}
+
+.react-datepicker__header {
+  background-color: var(--color-agri-green) !important;
+  border-bottom: none !important;
+  border-top-left-radius: 0.75rem !important;
+  border-top-right-radius: 0.75rem !important;
+}
+
+.react-datepicker__current-month, .react-datepicker__day-name {
+  color: white !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: var(--color-agri-accent) !important;
+}
